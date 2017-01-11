@@ -34,7 +34,7 @@ class App extends Component {
 
   onDimiss(id) {
     const isNotId = item => item.objectID !== id;
-    const updated = this.state.list.filter(isNotId);
+    const updatedList = this.state.list.filter(isNotId);
     this.setState({ list: updatedList });
   }
 
